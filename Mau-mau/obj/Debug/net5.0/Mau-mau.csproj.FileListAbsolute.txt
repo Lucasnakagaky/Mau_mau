@@ -1,0 +1,16 @@
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\bin\Debug\net5.0\Mau-mau.exe
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\bin\Debug\net5.0\Mau-mau.deps.json
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\bin\Debug\net5.0\Mau-mau.runtimeconfig.json
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\bin\Debug\net5.0\Mau-mau.runtimeconfig.dev.json
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\bin\Debug\net5.0\Mau-mau.dll
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\bin\Debug\net5.0\ref\Mau-mau.dll
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\bin\Debug\net5.0\Mau-mau.pdb
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.csproj.AssemblyReference.cache
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.AssemblyInfoInputs.cache
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.AssemblyInfo.cs
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.csproj.CoreCompileInputs.cache
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.dll
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\ref\Mau-mau.dll
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.pdb
+C:\Users\Invent032\source\repos\Mau-mau\Mau-mau\obj\Debug\net5.0\Mau-mau.genruntimeconfig.cache
