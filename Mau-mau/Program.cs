@@ -18,7 +18,7 @@ namespace Mau_mau
             Stack<string> cartasEmbaralhadas = new Stack<string>();
             Stack<string> lixo = new Stack<string>();
 
-            using (StreamReader reader = new StreamReader(@"C:\Users\\Invent032\\Desktop\\arquivoDoMau_mau.txt"))
+            using (StreamReader reader = new StreamReader(@"C:\Users\CLIENTE\\Desktop\\arquivoDoMau_mau.txt"))
             {
                 string line;
 
@@ -80,10 +80,17 @@ namespace Mau_mau
             Console.WriteLine(cartasEmbaralhadas);
 
             // Agora é pegar cada jogador e acrescentar a mão de cartas dele.
+            Console.WriteLine(_maos.Mao);
+            var cont = 0;
 
+            while (cont <= 5)
+            {
+                cont = cont + 1;
+                string recente = cartasEmbaralhadas.Pop();
 
-
-
+                _maos.Mao.Add(recente);
+            }
+            Console.WriteLine(_maos.Mao.Count());
         }
     }
 }

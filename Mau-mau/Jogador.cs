@@ -8,6 +8,6 @@ namespace Mau_mau
 {
     class Jogador
     {
-        List<string> Mao { get; set; }
+       public List<string> Mao { get; set; }
     }
 }
