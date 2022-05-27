@@ -9,22 +9,21 @@ namespace Mau_mau
     {
         static void Main(string[] args)
         {
-            Jogador _maos = new Jogador();
-            Baralho _baralho = new Baralho();
+            Jogador _jogador = new Jogador();
+            Carta _carta = new Carta();
+
 
             List<string> dados = new List<string>();
-            Queue<string> fila = new Queue<string>();
-            Stack<string> stringDeCartas = new Stack<string>();
-            Stack<string> cartasEmbaralhadas = new Stack<string>();
             Stack<string> lixo = new Stack<string>();
 
-            using (StreamReader reader = new StreamReader(@"C:\Users\CLIENTE\\Desktop\\arquivoDoMau_mau.txt"))
+            using (StreamReader reader = new StreamReader(@"C:\Users\Invent032\\Desktop\\arquivoDoMau_mau.txt"))
             {
                 string line;
 
                 while ((line = reader.ReadLine()) != null)
                 {
                     Console.WriteLine(line);
+                    Console.WriteLine("================");
                     dados.Add(line);
                 }
             }
@@ -37,60 +36,23 @@ namespace Mau_mau
             {
                 for (int i = 0; i < int.Parse(dados[1]); i++)
                 {
-                    fila.Enqueue(i.ToString());
+                    _jogador.Jogadores.Enqueue(i.ToString());
                 }
-                Console.Write("fila de jogadores " + fila.Count());
+                Console.Write("fila de jogadores " + _jogador.Jogadores.Count());
+                Console.Write("=============================");
             }
 
             var concatenar = dados[2] + (" ") + dados[3] + (" ") + dados[4];
 
-            foreach (string cartaIndivudial in concatenar.Split(' '))
-            {
-                stringDeCartas.Push(cartaIndivudial);
-            }
-            Console.WriteLine(stringDeCartas);
+            var stringDeCartas = _carta.JuntarAsCartas(concatenar);
 
-            List<string> listaValor = new List<string>();
-            List<string> listanaipe = new List<string>();
+            var baralho = _carta.Baralho(stringDeCartas);
 
-            foreach (var carta in stringDeCartas)
-            {
-                Console.WriteLine(carta);
-                var separaCarta = carta.ToCharArray();
-
-                var valor = separaCarta[0].ToString();
-                var nipe = separaCarta[1].ToString();
-                listaValor.Add(valor);
-                listanaipe.Add(nipe);
-            }
-
-            var listaValorEmbaralhado = _baralho.EmbaralharListaValor(listaValor);
-            var listaNipeEmbaralhado = _baralho.EmbaralharListaNaipe(listanaipe);
-
-            while (listaValorEmbaralhado.Count() > 0 || listaNipeEmbaralhado.Count() > 0)
-            {
-                var juntar = listaValorEmbaralhado[0] + listaNipeEmbaralhado[0];
-                listaValorEmbaralhado.RemoveAt(0);
-                listaNipeEmbaralhado.RemoveAt(0);
-
-                Console.WriteLine(juntar);
-                cartasEmbaralhadas.Push(juntar);
-            }
-
-            Console.WriteLine(cartasEmbaralhadas);
+            Console.WriteLine(baralho);
 
             // Agora é pegar cada jogador e acrescentar a mão de cartas dele.
-            Console.WriteLine(_maos.Mao);
-            var cont = 0;
 
-            while (cont <= 5)
-            {
-                cont = cont + 1;
-                string recente = cartasEmbaralhadas.Pop();
 
-                _maos.Mao.Add(recente);
-            }
-            Console.WriteLine(_maos.Mao.Count());
         }
     }
 }

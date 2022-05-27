@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Mau_mau
 {
-    class Jogador
+    public class Jogador
     {
-       public List<string> Mao { get; set; }
+        public Jogador()
+        {
+            Mao = new List<string>();
+            Jogadores = new Queue<string>();
+            string Nome;
+        }
+
+        public List<string> Mao { get; set; }
+        public Queue<string> Jogadores { get; set; }
+        public string Nome { get; set; }
     }
 }
