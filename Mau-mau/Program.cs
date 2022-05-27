@@ -11,6 +11,7 @@ namespace Mau_mau
         {
             Jogador _jogador = new Jogador();
             Carta _carta = new Carta();
+            MetodosDaCarta _metodosDaCarta = new MetodosDaCarta();
 
 
             List<string> dados = new List<string>();
@@ -44,9 +45,9 @@ namespace Mau_mau
 
             var concatenar = dados[2] + (" ") + dados[3] + (" ") + dados[4];
 
-            var stringDeCartas = _carta.JuntarAsCartas(concatenar);
+            var stringDeCartas = _metodosDaCarta.JuntarAsCartas(concatenar);
 
-            var baralho = _carta.Baralho(stringDeCartas);
+            var baralho = _metodosDaCarta.Baralho(stringDeCartas);
 
             Console.WriteLine(baralho);
 
